@@ -872,22 +872,7 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ## 🔨 Lars build — current state (working notes; replaced by a final README at completion)
 
-> This fork = **Lars**, AxiomLC's UI on Hermes Agent. Base: upstream hermes-workspace (zero-fork). Companion repo: `AxiomLC/lars-hermes` (voice server, parked). Full build doc lives in that repo's `SETUP.md` (§7 UI requirements, §10 pivot).
-
-**Build status:**
-
-- [x] Forked + cloned locally (`C:\Users\Admin\lars-hermes2-ui`), upstream remote kept
-- [x] Stack verified: React 19 + TS + Tailwind 4; 10 themes via `[data-theme]` CSS vars in `src/styles.css`, registry in `src/lib/theme.ts`; `src/scifi-theme.css` = starting point for the Lars theme
-- [ ] **Lars theme** — deep-blue futuristic, glass cards, sharp edges (`--radius: 0`), per-Div edge highlights (Div7 dark blue / Div1 gold / Div3 pink / Div4 green / Div6 yellow), futuristic font
-- [ ] 5 Divs wired to Hermes profiles (div7/div1/div3/div4/div6) via runtime profile switching
-- [ ] Corner mic module (lower-left) using Hermes' native voice — NOT the parked custom pipeline
-- [ ] All future plugin pages (graph DB, CRM, comms summaries) adopt the Lars theme
-- [ ] Three services to run UI: gateway `:8642` + dashboard `:9119` + workspace `:3000` (`pnpm dev`)
-
-**Decisions log:**
-- One repo for all UI work; voice server stays parked at `lars-hermes` (re-attach only if custom voice beats Hermes' native voice later)
-- Upstream merges welcome — theme work lives in additive files (`lars-theme.css` + registry lines) to keep pull-over cost low
-- Final polished README replaces this section at 1.0
+> **Moved to [LARS-README.md](LARS-README.md)** — the consolidated Lars build doc (current Hermes state, Div specs, future concepts, wiring plan). This upstream README stays untouched otherwise.
 
 ---
 
